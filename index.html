@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terroir d'Argan — Amlou, Miel & Huile d'Argan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <span>TERROIR</span>
+        <strong>D'ARGAN</strong>
+    </div>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#histoire">Notre histoire</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">100% naturel · Produit du Maroc</p>
+
+        <h1>
+            Le goût authentique
+            <span>du terroir marocain.</span>
+        </h1>
+
+        <p class="hero-text">
+            Découvrez notre sélection d'Amlou, d'huile d'argan
+            et de miel, soigneusement préparés à partir
+            de produits naturels marocains.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#produits" class="btn primary">
+                Découvrir nos produits
+            </a>
+
+            <a href="#histoire" class="btn secondary">
+                Notre histoire
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-product">
+
+        <div class="product-circle"></div>
+
+        <div class="jar jar-one">
+            <div class="jar-top"></div>
+            <div class="jar-body">
+                <small>TERROIR</small>
+                <strong>AMLOU</strong>
+                <span>Authentique</span>
+            </div>
+        </div>
+
+        <div class="jar jar-two">
+            <div class="jar-top"></div>
+            <div class="jar-body honey">
+                <small>TERROIR</small>
+                <strong>MIEL</strong>
+                <span>100% naturel</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFITS -->
+<section class="benefits">
+
+    <div>
+        <span>🌿</span>
+        <h3>100% naturel</h3>
+        <p>Des ingrédients sélectionnés avec soin.</p>
+    </div>
+
+    <div>
+        <span>🇲🇦</span>
+        <h3>Made in Morocco</h3>
+        <p>Des produits issus du terroir marocain.</p>
+    </div>
+
+    <div>
+        <span>✨</span>
+        <h3>Qualité premium</h3>
+        <p>Un savoir-faire traditionnel et authentique.</p>
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products-section" id="produits">
+
+    <div class="section-title">
+        <p class="eyebrow">Notre sélection</p>
+
+        <h2>
+            Des produits simples.
+            <span>Des saveurs exceptionnelles.</span>
+        </h2>
+
+        <p>
+            Une sélection de produits naturels inspirés
+            des traditions marocaines.
+        </p>
+    </div>
+
+
+    <div class="products">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card">
+
+            <div class="product-image amlou-img">
+                <div class="fake-jar">
+                    <div class="fake-label">
+                        <small>TERROIR</small>
+                        <strong>AMLOU</strong>
+                        <span>Amande & Argan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Spécialité marocaine
+                </span>
+
+                <h3>Amlou traditionnel</h3>
+
+                <p>
+                    Un mélange gourmand d'amandes,
+                    d'huile d'argan et de miel.
+                </p>
+
+                <div class="product-bottom">
+                    <strong>79 DH</strong>
+
+                    <button onclick="showMessage('Amlou traditionnel')">
+                        Découvrir
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card">
+
+            <div class="product-image argan-img">
+
+                <div class="bottle">
+                    <div class="bottle-label">
+                        <small>TERROIR</small>
+                        <strong>ARGAN</strong>
+                        <span>Huile pure</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Huile naturelle
+                </span>
+
+                <h3>Huile d'argan</h3>
+
+                <p>
+                    Une huile précieuse issue
+                    de l'arganier marocain.
+                </p>
+
+                <div class="product-bottom">
+                    <strong>99 DH</strong>
+
+                    <button onclick="showMessage('Huile d’argan')">
+                        Découvrir
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card">
+
+            <div class="product-image honey-img">
+
+                <div class="honey-jar">
+                    <div class="honey-label">
+                        <small>TERROIR</small>
+                        <strong>MIEL</strong>
+                        <span>Pur & naturel</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Produit naturel
+                </span>
+
+                <h3>Miel naturel</h3>
+
+                <p>
+                    Un miel authentique récolté
+                    avec respect du terroir.
+                </p>
+
+                <div class="product-bottom">
+                    <strong>89 DH</strong>
+
+                    <button onclick="showMessage('Miel naturel')">
+                        Découvrir
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+<section class="story" id="histoire">
+
+    <div class="story-image">
+        <div class="story-circle">
+            🌿
+        </div>
+    </div>
+
+    <div class="story-content">
+
+        <p class="eyebrow">Notre histoire</p>
+
+        <h2>
+            Du cœur du Maroc
+            <span>à votre table.</span>
+        </h2>
+
+        <p>
+            Notre mission est simple : faire découvrir
+            la richesse du terroir marocain à travers
+            des produits authentiques et naturels.
+        </p>
+
+        <p>
+            Nous travaillons avec des producteurs
+            passionnés afin de préserver le goût,
+            la qualité et le savoir-faire traditionnel.
+        </p>
+
+        <a href="#contact" class="btn primary">
+            En savoir plus
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <div>
+        <p class="eyebrow">Le goût du Maroc</p>
+
+        <h2>
+            Prêt à découvrir
+            <span>nos saveurs ?</span>
+        </h2>
+
+        <p>
+            Contactez-nous pour découvrir nos produits
+            et nos offres disponibles.
+        </p>
+
+        <a href="#contact" class="btn white">
+            Nous contacter
+        </a>
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <p class="eyebrow">Contact</p>
+
+        <h2>
+            Parlons de votre
+            <span>prochaine commande.</span>
+        </h2>
+
+    </div>
+
+
+    <form onsubmit="sendForm(event)">
+
+        <div class="form-row">
+
+            <input
+                type="text"
+                placeholder="Votre nom"
+                required
+            >
+
+            <input
+                type="tel"
+                placeholder="Téléphone"
+                required
+            >
+
+        </div>
+
+        <input
+            type="email"
+            placeholder="Votre email"
+            required
+        >
+
+        <textarea
+            placeholder="Votre message..."
+            rows="5"
+            required
+        ></textarea>
+
+        <button class="btn primary" type="submit">
+            Envoyer le message
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="logo">
+        <span>TERROIR</span>
+        <strong>D'ARGAN</strong>
+    </div>
+
+    <p>
+        © 2026 Terroir d'Argan — Tous droits réservés.
+    </p>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
+</footer>
+
+
+<div id="notification"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
