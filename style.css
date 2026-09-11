@@ -1,0 +1,686 @@
+:root {
+    --green: #173d2b;
+    --green-light: #315b43;
+    --cream: #f8f4ea;
+    --beige: #e9dfca;
+    --gold: #c99a45;
+    --dark: #172019;
+    --white: #ffffff;
+    --text: #626860;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: var(--cream);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: .9;
+    color: var(--green);
+}
+
+.logo span {
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.logo strong {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+    font-size: 14px;
+}
+
+nav a {
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 25px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    padding: 70px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: clamp(50px, 6vw, 82px);
+    line-height: 1.02;
+    color: var(--green);
+}
+
+h1 span,
+h2 span {
+    color: var(--gold);
+    display: block;
+}
+
+.hero-text {
+    color: var(--text);
+    line-height: 1.8;
+    margin: 28px 0;
+    max-width: 520px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary {
+    background: var(--green);
+    color: white;
+}
+
+.primary:hover {
+    background: var(--green-light);
+    transform: translateY(-2px);
+}
+
+.secondary {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.secondary:hover {
+    background: var(--green);
+    color: white;
+}
+
+
+/* HERO PRODUCT */
+
+.hero-product {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-circle {
+    width: 410px;
+    height: 410px;
+    background: var(--beige);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.jar {
+    width: 145px;
+    height: 190px;
+    position: absolute;
+    bottom: 100px;
+    z-index: 2;
+}
+
+.jar-one {
+    left: 25%;
+    transform: rotate(-7deg);
+}
+
+.jar-two {
+    right: 20%;
+    transform: rotate(8deg);
+    bottom: 80px;
+}
+
+.jar-top {
+    height: 30px;
+    width: 125px;
+    margin: auto;
+    background: #29251e;
+    border-radius: 8px 8px 3px 3px;
+}
+
+.jar-body {
+    height: 150px;
+    background: #a77a45;
+    border-radius: 10px 10px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.jar-body.honey {
+    background: #d19b36;
+}
+
+.jar-body small {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.jar-body strong {
+    font-family: "Playfair Display";
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.jar-body span {
+    font-size: 9px;
+}
+
+
+/* BENEFITS */
+
+.benefits {
+    background: var(--green);
+    color: white;
+    padding: 40px 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.benefits div {
+    padding: 15px;
+}
+
+.benefits span {
+    font-size: 30px;
+}
+
+.benefits h3 {
+    margin: 10px 0 5px;
+}
+
+.benefits p {
+    color: #c7d0c9;
+    font-size: 13px;
+}
+
+
+/* PRODUCTS */
+
+.products-section {
+    padding: 110px 7%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 650px;
+    margin: auto auto 60px;
+}
+
+h2 {
+    font-size: clamp(40px, 5vw, 60px);
+    color: var(--green);
+    line-height: 1.05;
+}
+
+.section-title > p:last-child {
+    margin-top: 20px;
+    color: var(--text);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,.05);
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-image {
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amlou-img {
+    background: #eadbc4;
+}
+
+.argan-img {
+    background: #dfe5d4;
+}
+
+.honey-img {
+    background: #ead3a0;
+}
+
+
+/* PRODUCT PACKAGING */
+
+.fake-jar,
+.honey-jar {
+    width: 150px;
+    height: 190px;
+    border-radius: 15px 15px 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fake-jar {
+    background: #a66e3f;
+}
+
+.honey-jar {
+    background: #d49328;
+}
+
+.fake-label,
+.honey-label,
+.bottle-label {
+    background: #f8f1dd;
+    width: 120px;
+    padding: 22px 10px;
+    text-align: center;
+    color: var(--green);
+}
+
+.fake-label small,
+.honey-label small,
+.bottle-label small {
+    display: block;
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+
+.fake-label strong,
+.honey-label strong,
+.bottle-label strong {
+    display: block;
+    font-family: "Playfair Display";
+    font-size: 21px;
+    margin: 5px 0;
+}
+
+.fake-label span,
+.honey-label span,
+.bottle-label span {
+    font-size: 8px;
+}
+
+
+/* BOTTLE */
+
+.bottle {
+    width: 110px;
+    height: 230px;
+    background: #9d9a5d;
+    border-radius: 12px 12px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bottle::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 35px;
+    background: #29251e;
+    top: -25px;
+    border-radius: 5px 5px 0 0;
+}
+
+.bottle-label {
+    width: 90px;
+    padding: 18px 5px;
+}
+
+
+/* PRODUCT INFO */
+
+.product-info {
+    padding: 25px;
+}
+
+.category {
+    font-size: 10px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display";
+    color: var(--green);
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+.product-info p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.product-bottom strong {
+    color: var(--green);
+    font-size: 20px;
+}
+
+.product-bottom button {
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* STORY */
+
+.story {
+    padding: 100px 7%;
+    background: var(--beige);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.story-image {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle, #a7b28d 2px, transparent 3px);
+    background-size: 25px 25px;
+}
+
+.story-circle {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.story-content p:not(.eyebrow) {
+    color: var(--text);
+    line-height: 1.8;
+    margin: 20px 0;
+    max-width: 520px;
+}
+
+
+/* CTA */
+
+.cta {
+    padding: 100px 7%;
+    background: var(--green);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.cta > div {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cta p:not(.eyebrow) {
+    color: #ccd4ce;
+    margin: 20px 0 30px;
+}
+
+.white {
+    background: white;
+    color: var(--green);
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 100px 7%;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #ddd;
+    background: white;
+    margin-bottom: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--gold);
+}
+
+form button {
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px 7%;
+    background: #102c20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo {
+    color: white;
+}
+
+footer p {
+    color: #aebdb3;
+    font-size: 12px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.socials a:hover {
+    color: var(--gold);
+}
+
+
+/* NOTIFICATION */
+
+#notification {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: var(--green);
+    color: white;
+    padding: 15px 22px;
+    border-radius: 5px;
+    transform: translateY(100px);
+    transition: .4s;
+    z-index: 1000;
+}
+
+#notification.show {
+    transform: translateY(0);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-product {
+        height: 400px;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .story {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .story-content {
+        text-align: center;
+    }
+
+    .story-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
